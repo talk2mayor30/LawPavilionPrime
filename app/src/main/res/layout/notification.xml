@@ -1,0 +1,26 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="falcon.com.falcon.Notification.Notification">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/menuHeader">
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/ntfView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/listBackground"
+        android:scrollbars="vertical"
+        android:divider="@color/bookMiddle"
+        android:dividerHeight="1dp">
+
+    </ListView>
+
+</LinearLayout>

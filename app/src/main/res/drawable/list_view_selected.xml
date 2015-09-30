@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#54ee0000" />
+        </shape>
+    </item>
+
+
+    <item>
+        <nine-patch android:src="@drawable/jud_shelf_head" />
+
+
+    </item>
+</layer-list>

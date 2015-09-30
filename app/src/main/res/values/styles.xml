@@ -1,0 +1,53 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="CurlTheme" parent="Theme.AppCompat.Light.DarkActionBar"></style>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="background">@drawable/head</item>
+    </style>
+
+
+    <style name="myActivities" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+    </style>
+
+    <style name="myNavDrawer" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/ColorPrimary</item>
+        <item name="colorPrimaryDark">@color/ColorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionBarStyle">@style/myToolBar</item>
+    </style>
+
+    <style name="myToolBar" parent="Base.ThemeOverlay.AppCompat.Dark">
+        <item name="android:textColorPrimary">#f00</item>
+    </style>
+
+    <!-- Tree View-->
+    <style name="TreeNodeStyleCustom">
+        <item name="android:paddingLeft">20dp</item>
+        <!--<item name="android:showDividers">middle</item>-->
+        <!--<item name="android:divider">@android:drawable/divider_horizontal_bright</item>-->
+    </style>
+
+    <style name="text_subtext">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textColor">@color/ColorPrimary</item>
+        <item name="android:textSize">33sp</item>
+    </style>
+
+    <style name="text_header">
+        <item name="android:typeface">monospace</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:textSize">33sp</item>
+    </style>
+</resources>

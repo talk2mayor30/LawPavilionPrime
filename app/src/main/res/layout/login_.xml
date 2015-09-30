@@ -1,0 +1,192 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/logo"/>
+
+            <LinearLayout
+                android:layout_width="440dp"
+                android:layout_height="500dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/view_bg">
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:hint="EMAIL"
+                    android:textSize="12dp"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/abc_btn_check_to_on_mtrl_015"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_textbg"/>
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="10dp"
+                    android:hint="PASSWORD"
+                    android:textColor="#000"
+                    android:password="true"
+                    android:singleLine="true"
+                    android:textSize="12dp"
+                    android:drawableLeft="@drawable/abc_btn_check_to_on_mtrl_015"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/edit_textbg"/>
+
+                <RelativeLayout
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="20dp">
+
+                    <CheckBox
+                        android:id="@+id/remember"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerVertical="true"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12dp"
+                        android:textColor="#000"
+                        android:layout_toRightOf="@+id/remember"
+                        android:layout_centerVertical="true"
+                        android:textStyle="bold"
+                        android:text="REMEMBER ME"/>
+
+                    <TextView
+                        android:id="@+id/forgotPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:text="FORGOT YOUR PASSWORD?"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:textColor="#ffabc8ff"
+                        android:textStyle="bold"
+                        android:textSize="12dp"/>
+
+                </RelativeLayout>
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:text="LOGIN"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:stateListAnimator="@null"
+                    android:background="#FDA3060A"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#FFF"/>
+                <Button
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:text="NEW USER? SIGN UP"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:stateListAnimator="@null"
+                    android:background="#FFDEDA08"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#FDA3060A"/>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/signUp"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:padding="10dp"-->
+                    <!--android:text="NEW USER? SIGN UP"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#ffabc8ff"/>-->
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/responseMessage"
+                android:layout_width="400dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="10dp"
+                android:textColor="#E00"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:visibility="invisible"
+                android:text="Invalid username or password"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnBkStore"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="GO TO BOOKSTORE"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:stateListAnimator="@null"
+            android:background="#FFDEDA08"
+            android:textColor="#FDA3060A"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/progressMum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="140dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/prg_bar_bg">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/progressMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Loading..."
+                android:textColor="#000"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>
+
+

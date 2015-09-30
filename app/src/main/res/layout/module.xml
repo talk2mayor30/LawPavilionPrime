@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout    xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:CircleProgressView="http://schemas.android.com/apk/res-auto"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="#fff"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/logo"/>
+
+            <RelativeLayout
+                android:id="@+id/startdownloadLayout"
+                android:layout_width="500dp"
+                android:paddingRight="30dp"
+                android:paddingLeft="30dp"
+                android:orientation="vertical"
+                android:paddingTop="30dp"
+                android:layout_height="350dp"
+                android:visibility="visible"
+                android:background="@drawable/view_bg">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Law pavilion reports"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="20dp"
+                    android:textColor="#000"
+                    android:layout_marginRight="5dp"
+
+                    android:textSize="24sp"/>
+
+                <ImageView
+                    android:id="@+id/download_img"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:src="@drawable/arrow_download_icon"
+                    android:layout_marginTop="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/title"/>
+
+                <TextView
+                    android:id="@+id/size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@+id/download_img"
+                    android:textSize="20dp"
+                    android:textColor="#000"
+                    android:layout_centerHorizontal="true"
+                    android:text=""/>
+                <Button
+                    android:id="@+id/startDownload"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_alignParentBottom="true"
+                    android:text="START DOWNLOAD"
+                    android:enabled="true"
+                    android:visibility="visible"
+                    android:layout_margin="5dp"
+                    android:textColor="#ff7b4718"
+                    android:textSize="26sp"
+                    android:textStyle="bold"
+                    android:stateListAnimator="@null"
+                    android:background="@drawable/btnbg"/>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/downloadProgressLayout"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:gravity="top|center">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="vertical"
+                            android:layout_height="wrap_content"
+                            android:gravity="top|center">
+
+                            <at.grabner.circleprogress.CircleProgressView
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:id="@+id/circleView"
+                                CircleProgressView:rimWidth="10dp"
+                                CircleProgressView:barWidth="10dp"
+                                CircleProgressView:contourSize="3dp"
+                                CircleProgressView:contourColor="#ff464646"
+                                CircleProgressView:unitColor="@color/ColorPrimary"/>
+
+                            <TextView
+                                android:id="@+id/currentDownload"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textSize="16dp"
+                                android:visibility="gone"
+                                android:text="Downloading Law report... please wait"
+                                android:textColor="#000"
+                                android:layout_marginTop="5dp"/>
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center_horizontal">
+
+                    <com.akexorcist.roundcornerprogressbar.RoundCornerProgressBar
+                        android:id="@+id/progress_1"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="20dp"
+                        app:rcBackgroundPadding="2dp"
+                        app:rcBackgroundRadius="2dp"
+                        app:rcBackgroundColor="#e6f8f3"
+                        app:rcProgressColor="#ff7b4718"
+                        android:layout_width="500dp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="Total progress: "
+                            android:textColor="#000"
+                            android:layout_marginTop="5dp"/>
+
+                        <TextView
+                            android:id="@+id/totalDownload"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="24dp"
+                            android:text="20%"
+                            android:textColor="#000"
+                            android:layout_marginTop="5dp"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/dwnCount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16dp"
+                            android:text="5 files downloaded out of 20"
+                            android:textColor="#000"
+                            android:layout_marginTop="5dp"/>
+                    </LinearLayout>
+                    <Button
+                        android:id="@+id/btnDwnState"
+                        android:layout_width="300dp"
+                        android:layout_height="60dp"
+                        android:text="PAUSE DOWNLOAD"
+                        android:layout_marginTop="40dp"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:stateListAnimator="@null"
+                        android:background="#FFDEDA08"
+                        android:textColor="#FDA3060A"/>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+
+                android:id="@+id/refreshDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:padding="5dp"
+                android:visibility="gone"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/colorAccent"
+
+                android:text="Click here to refresh if download doesn't start"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressMum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="140dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/prg_bar_bg">
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/progressMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Loading..."
+                android:textColor="#000"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/motherAlert"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="550dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:background="@drawable/view_bg">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="#ff1cd6ff">
+                <TextView
+                    android:id="@+id/alertTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center_vertical"
+                    android:text="Error"
+                    android:paddingLeft="10dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="#fff"
+                    android:textColor="#ff1cd6ff"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/alertMessage"
+                android:layout_width="match_parent"
+                android:layout_height="110dp"
+                android:background="#fff"
+                android:gravity="left|center_vertical"
+                android:lineSpacingExtra="10dp"
+                android:paddingLeft="10dp"
+                android:textSize="16dp"
+                android:textColor="#ff212121"
+                android:text="Oops! Something went wrong \n please check yout internet connection"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffe3ebf2">
+            <Button
+                android:id="@+id/alertRetry"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:stateListAnimator="@null"
+                android:background="#fff"
+                android:text="Retry"
+                android:layout_marginTop="1dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

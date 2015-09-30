@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ash">#FFDEDEDE</color>
+    <color name="ColorPrimary">#ffdfb98e</color>
+    <color name="success">#ff18f416</color>
+    <color name="failed">#ffe61b0e</color>
+    <color name="listBackground">#FFEEEEEE</color>
+    <color name="ColorPrimaryDark">#fff57c00</color>
+    <color name="alpha_colorPrimaryDark">#ffdfb98e</color>
+    <color name="colorAccent">#ff599bff</color>
+    <color name="tabsScrollColor">#ffffffff</color>
+    <color name="colorTransparent">#00000000</color>
+    <color name="navDrawerHeader">#bbbbbb</color>
+    <color name="btnColor">#ffcb9764</color>
+    <color name="bookMiddle">#ffbda541</color>
+    <color name="bookBottom">#ff8e8e8e</color>
+    <color name="menuHeader">#fff8f1e8</color>
+    <color name="menuBtnBg">#ffdfdfdf</color>
+    <color name="navDrawerHeaderImageBoundary">#FFEEEEEE</color>
+    <color name="navDrawerSelectedItem">#FFFFFF</color>
+    <color name="navDrawerSelector">@color/ColorPrimary</color>
+    <color name="navDrawerBlack">#000000</color>
+    <color name="navDrawerWhite">#FFFFFF</color>
+
+    <!-- FAB-->
+    <color name="material_blue_500">#5677fc</color>
+    <color name="ripple">#80F57C00</color>
+    <color name="accent">#ffff9800</color>
+    <color name="accent_pressed">#fff57c00</color>
+
+
+    <!-- falcon.com.falcon.research project FAB-->
+    <color name="projectRipple">#cbff3d00</color>
+    <color name="projectAccent">#ee0000</color>
+    <color name="projectAccentPressed">#ff990000</color>
+
+    <color name="text_lgray">#BBBBBB</color>
+    <color name="text_gray">#ff636363</color>
+    <color name="app_theme_color">#11b01d</color>
+
+</resources>

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="2dp"
+        android:background="@color/menuHeader"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+
+                android:text="Search cases"
+                android:layout_toLeftOf="@+id/search"
+                android:drawableLeft="@drawable/abc_ic_search_api_mtrl_alpha"
+                android:background="@color/background_material_light"
+                android:layout_alignParentLeft="true"/>
+
+            <Button
+                android:id="@+id/search"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="#ffcb9764"
+                android:text="search"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:stateListAnimator="@null"
+                android:layout_centerInParent="true"/>
+
+            <Button
+                android:id="@+id/search_history"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#ffcb9764"
+                android:text="search history"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="1dp"
+                android:stateListAnimator="@null"
+                android:textColor="#fff"
+                android:textSize="14sp"/>
+
+            <Button
+                android:id="@+id/search_filter"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:background="#ffcb9764"
+                android:stateListAnimator="@null"
+                android:text="search filter"
+                android:layout_toLeftOf="@id/search_history"
+                android:textColor="#fff"
+                android:textSize="14sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:orientation="horizontal">-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+
+        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginRight="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="#000"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="45dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginBottom="45dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="2">&ndash;&gt;-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--&lt;!&ndash;<include android:id="@+id/filter"&ndash;&gt;-->
+        <!--&lt;!&ndash;layout="@layout/search_filter"&ndash;&gt;-->
+        <!--&lt;!&ndash;/>&ndash;&gt;-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:background="#fff">-->
+
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--android:orientation="horizontal"-->
+                <!--android:paddingTop="3dp"-->
+                <!--android:paddingBottom="3dp"-->
+                <!--android:gravity="center">-->
+
+                <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:layout_marginRight="5dp"&ndash;&gt;-->
+                    <!--&lt;!&ndash;android:src="@drawable/abc_ic_menu_cut_mtrl_alpha"/>&ndash;&gt;-->
+                <!--<ImageView-->
+                    <!--android:id="@+id/leftView"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="3.5"-->
+
+                    <!--android:background="@drawable/left_half_book">-->
+
+                <!--</ImageView>-->
+   <!---->
+
+                <!--<ListView-->
+                    <!--android:id="@+id/listView"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:background="@drawable/right_half_book">-->
+
+                <!--</ListView>-->
+
+
+
+            <!--</LinearLayout>-->
+
+        <!--</LinearLayout>-->
+
+        <!--&lt;!&ndash;<LinearLayout&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:background="#fff"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:orientation="vertical"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="45dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginBottom="45dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_weight="2">&ndash;&gt;-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--&lt;!&ndash;<TextView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="15dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textSize="14sp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:textColor="#000"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:gravity="center_horizontal"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:text="Search History" />&ndash;&gt;-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--&lt;!&ndash;<ListView&ndash;&gt;-->
+        <!--&lt;!&ndash;android:id="@+id/list"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_marginTop="5dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;android:layout_height="match_parent">&ndash;&gt;-->
+        <!--&lt;!&ndash;</ListView>&ndash;&gt;-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--&lt;!&ndash;&ndash;&gt;-->
+        <!--&lt;!&ndash;</LinearLayout>&ndash;&gt;-->
+
+    <!--</LinearLayout>-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/leftView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:background="@drawable/left_half_book">
+
+        </ImageView>
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="wrap_content"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_height="match_parent"
+            android:scrollbars="none"
+            android:layout_weight="1"
+            android:background="@drawable/right_half_book">
+
+        </ListView>
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginRight="5dp"-->
+            <!--android:src="@drawable/abc_ic_menu_cut_mtrl_alpha"/>-->
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="2dp"
+        android:background="#fffaf2e9">
+
+        <TextView
+            android:id="@+id/query"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:text="Query: Mr Gbenga vs Ilori, 20 pages found"
+            android:textColor="#000"
+            />
+
+
+        <TextView
+            android:id="@+id/page_no"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/next"
+            android:gravity="center"
+            android:text="page 1 of 20"
+            android:textColor="#000"
+            />
+
+        <Button
+            android:id="@+id/previous"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#ffcb9764"
+            android:stateListAnimator="@null"
+            android:text="Previous"
+            android:layout_toLeftOf="@id/page_no"
+            android:textColor="#fff"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/next"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#ffcb9764"
+            android:text="Next"
+            android:layout_alignParentRight="true"
+            android:stateListAnimator="@null"
+            android:textColor="#fff"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

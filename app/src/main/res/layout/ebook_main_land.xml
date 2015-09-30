@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_margin="10dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="2dp"
+        android:background="@color/menuHeader"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:text="Law Pavilion: samuel Vs Itunu 2011,case number: sc34501"
+            android:gravity="center|left"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            android:textSize="14sp"/>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <Button
+                android:id="@+id/search"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="#ffcb9764"
+                android:text="search"
+                android:textColor="#fff"
+                android:textSize="14sp"
+                android:stateListAnimator="@null"
+                android:layout_alignParentRight="true"/>
+
+            <EditText
+                android:id="@+id/search_box"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Search cases"
+                android:drawableLeft="@drawable/abc_ic_search_api_mtrl_alpha"
+                android:background="@color/background_material_light"
+                android:layout_toLeftOf="@id/search" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="@drawable/book_cover">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/abc_ic_menu_cut_mtrl_alpha"/>
+        <TextView
+            android:id="@+id/leftView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="25dp"
+            android:text=" In trial order to manage memory resource and for speed optimization in the app"
+            android:gravity="left"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent">
+
+        </TextView>
+
+        <!--<ImageView-->
+        <!--android:layout_width="20dp"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_marginTop="13dp"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/middle_binder"/>-->
+
+        <TextView
+            android:id="@+id/rightView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="left"
+            android:layout_weight="1"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:text="In trial order to manage memory resource and for speed optimization in the app
+                        "
+            android:background="@android:color/transparent">
+
+        </TextView>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/abc_ic_menu_cut_mtrl_alpha"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:padding="2dp"
+        android:background="#ff8f959a">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/abc_ic_menu_cut_mtrl_alpha"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_content_create"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_content_create"/>
+            <TextView
+                android:layout_width="150dp"
+                android:layout_height="30dp"
+                android:text="page 1/200"
+                android:gravity="center"
+                android:background="#fff"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_search"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/abc_ic_menu_copy_mtrl_am_alpha"/>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/lawPavilionLogo"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:src="@drawable/logo"
+            android:layout_alignParentRight="true"
+            android:stateListAnimator="@null"
+            android:textColor="#fff"
+            android:textSize="14sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

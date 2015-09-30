@@ -1,0 +1,39 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion '21.0.2'
+    defaultConfig {
+        applicationId 'git.lawpavilionprime'
+        minSdkVersion 14
+        targetSdkVersion 21
+        versionCode 1
+        versionName '1.0'
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':library')
+    compile project(':libSFG')
+    // You must install or update the Support Repository through the SDK manager to use this dependency.
+    // compile 'com.github.passsy:android-HoloCircularProgressBar:1.3@aar'
+    compile project(':CircleProgressView')
+    compile project(':ThinDownloadManager')
+    compile 'com.android.support:support-v4:21.0.2'
+    compile 'com.android.support:appcompat-v7:21.0.2'
+    compile 'com.github.boxme:asyncmanager:1.0.0'
+    compile 'com.akexorcist:RoundCornerProgressBar:1.2.2'
+    compile 'com.google.android.gms:play-services:7.5.0'
+    compile 'com.google.android.gms:play-services-ads:7.5.0'
+    compile 'com.google.android.gms:play-services-identity:7.3.0'
+    compile 'com.google.android.gms:play-services-gcm:7.3.0'
+}

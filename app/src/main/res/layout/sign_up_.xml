@@ -1,0 +1,227 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/logo"/>
+
+            <LinearLayout
+                android:layout_width="500dp"
+                android:layout_height="730dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:background="@drawable/view_bg">
+
+                <EditText
+                    android:id="@+id/firstname"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="10dp"
+                    android:hint="FIRST NAME"
+                    android:singleLine="true"
+                    android:textSize="12dp"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/abc_btn_check_to_on_mtrl_015"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_textbg"/>
+                <EditText
+                    android:id="@+id/lastname"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="10dp"
+                    android:singleLine="true"
+                    android:hint="LAST NAME"
+                    android:textColor="#000"
+                    android:textSize="12dp"
+                    android:drawableLeft="@drawable/abc_btn_check_to_on_mtrl_015"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_textbg"/>
+
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="10dp"
+                    android:hint="EMAIL"
+                    android:singleLine="true"
+                    android:textSize="12dp"
+                    android:inputType="textEmailAddress"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/abc_btn_check_to_on_mtrl_015"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_textbg"/>
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="10dp"
+                    android:hint="PASSWORD"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:inputType="textPassword"
+                    android:textSize="12dp"
+                    android:drawableLeft="@drawable/abc_btn_check_to_on_mtrl_015"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_textbg"/>
+
+                <EditText
+                    android:id="@+id/confirmPassword"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="10dp"
+                    android:hint="CONFIRM PASSWORD"
+                    android:inputType="textPassword"
+                    android:textSize="12dp"
+                    android:singleLine="true"
+                    android:textColor="#000"
+                    android:drawableLeft="@drawable/abc_btn_check_to_on_mtrl_015"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_textbg"/>
+
+                <LinearLayout
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/country"
+                        android:layout_width="0dp"
+                        android:gravity="center_vertical"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"
+                        android:background="@drawable/edit_textbg"
+                        android:spinnerMode="dialog"
+                        android:layout_weight="1"/>
+
+                    <Spinner
+                        android:id="@+id/state"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:background="@drawable/edit_textbg"
+                        android:spinnerMode="dialog"
+
+                        android:clickable="false"
+                        android:layout_weight="1">
+                    </Spinner>
+
+                </LinearLayout>
+                <EditText
+                    android:id="@+id/contact"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:paddingLeft="10dp"
+                    android:hint="CONTACT"
+                    android:inputType="phone"
+                    android:textColor="#000"
+                    android:singleLine="true"
+                    android:textSize="12dp"
+                    android:drawableLeft="@drawable/abc_btn_check_to_on_mtrl_015"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/edit_textbg"/>
+
+                <Button
+                    android:id="@+id/btnSignUp"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:text="SIGN UP"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:stateListAnimator="@null"
+                    android:background="#FDA3060A"
+                    android:layout_marginBottom="20dp"
+                    android:textColor="#FFDEDA08"/>
+
+                <Button
+                    android:id="@+id/btnLogin"
+                    android:layout_width="400dp"
+                    android:layout_height="60dp"
+                    android:text="EXISTING USER? LOGIN"
+                    android:textStyle="bold"
+                    android:textSize="16dp"
+                    android:stateListAnimator="@null"
+                    android:background="#FFDEDA08"
+                    android:layout_marginBottom="10dp"
+                    android:textColor="#FDA3060A"/>
+
+                <!--<TextView-->
+                    <!--android:id="@+id/login"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="EXISTING USER? LOGIN"-->
+                    <!--android:textStyle="bold"-->
+                    <!--android:textSize="12dp"-->
+                    <!--android:textColor="#ffabc8ff"/>-->
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/responseMessage"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:textColor="#E00"
+                android:gravity="center"
+                android:textSize="12dp"
+                android:visibility="invisible"
+                android:text="Invalid username or password"
+                android:maxLines="2"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/progressMum"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="400dp"
+            android:layout_height="140dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/prg_bar_bg">
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/progressMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:text="Loading..."
+                android:textColor="#000"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

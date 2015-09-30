@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:gravity="center">
+
+    <View android:background="#ffe61b0e"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_weight="1">
+            <GridView
+                android:layout_marginTop="10dp"
+                android:id="@+id/dashboard_head"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="65dp"
+
+                android:numColumns="4"
+                android:stretchMode="columnWidth"
+                android:layout_gravity="fill_vertical"
+                android:stateListAnimator="@null"
+                android:horizontalSpacing="0dp"
+                android:verticalSpacing="0dp"
+                android:scrollbars="none"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/head"
+                android:scaleType="fitXY"
+                />
+
+            <GridView
+                android:id="@+id/dashboard"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:numColumns="4"
+                android:stretchMode="columnWidth"
+                android:layout_gravity="fill_vertical"
+                android:horizontalSpacing="0dp"
+                android:stateListAnimator="@null"
+                android:verticalSpacing="0dp"
+                android:scrollbars="none">
+
+            </GridView>
+            <GridView
+                android:id="@+id/dashboard_head2"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:numColumns="4"
+                android:stretchMode="columnWidth"
+                android:layout_gravity="fill_vertical"
+                android:stateListAnimator="@null"
+                android:horizontalSpacing="0dp"
+                android:verticalSpacing="0dp"
+                android:scrollbars="none"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/head"
+                android:scaleType="fitXY"/>
+
+            <GridView
+                android:id="@+id/dashboard2"
+                android:layout_width="match_parent"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:numColumns="4"
+                android:stretchMode="columnWidth"
+                android:layout_gravity="fill_vertical"
+                android:horizontalSpacing="0dp"
+                android:stateListAnimator="@null"
+                android:verticalSpacing="0dp"
+                android:scrollbars="none"
+                android:layout_marginBottom="5dp">
+
+            </GridView>
+
+
+    </LinearLayout>
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="60dp"-->
+        <!--android:background="#336699"/>-->
+    <Button
+        android:id="@+id/forceExit"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Log out"/>
+
+
+</LinearLayout>

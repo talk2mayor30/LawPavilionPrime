@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="10dp"
+    tools:context="falcon.com.falcon.practiceArea.PracticeArea">
+
+   <include android:id="@+id/head"
+            layout="@layout/header"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <GridView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:stretchMode="columnWidth"
+                android:numColumns="1"
+                android:horizontalSpacing="0dp"
+                android:verticalSpacing="0dp"
+                android:scrollbars="none"
+                android:id="@+id/labelGrid"/>
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="180dp"
+                android:stretchMode="columnWidth"
+                android:layout_weight="2"
+                android:numColumns="auto_fit"
+                android:horizontalSpacing="0dp"
+                android:verticalSpacing="0dp"
+                android:scrollbars="none"
+                android:id="@+id/bookGrid">
+
+           </GridView>
+       </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <View
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:scrollbars="none"/>
+
+            <GridView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:columnWidth="150dp"
+                android:layout_marginRight="20dp"
+                android:stretchMode="columnWidth"
+                android:layout_weight="2"
+                android:numColumns="auto_fit"
+                android:horizontalSpacing="0dp"
+                android:verticalSpacing="0dp"
+                android:scrollbars="none"
+                android:id="@+id/book">
+
+            </GridView>
+        </LinearLayout>
+   </FrameLayout>
+
+    <include android:id="@+id/footer"
+                layout="@layout/bottom"/>
+
+</LinearLayout>

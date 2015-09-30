@@ -1,0 +1,77 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="130dp"
+    android:orientation="vertical"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="5dp"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="9999"
+            android:background="#ffffac00"
+           android:paddingRight="3dp"
+            android:paddingBottom="1dp"
+            android:paddingLeft="3dp"
+            android:textStyle="bold"
+            android:layout_marginTop="-1dp"/>
+
+        <TextView
+            android:id="@+id/case_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAllCaps="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textColor="#009900"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:layout_toLeftOf="@id/year"
+            android:text="Agbiti v. Nigerian Navy teiufr seifsf idffjf fifj fidf zidcucf dfidf fu ej rier ieri erirei reieie ririr reire erier rire reire reierir riirire reierieiedfidi"/>
+
+        <TextView
+            android:id="@+id/subject_matter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="#ee0000"
+            android:textSize="15dp"
+            android:layout_marginTop="1dp"
+            android:layout_below="@id/year"
+            android:text="A subject matter -  principle attached to it jdfh fddfsi fdifd fd dfidf dfifdfd dfi dfifd dfifd fdidfifd fdffn fd fdifd fdidff fdd df fifif did dif fifif dfiidf idf"/>
+
+        <TextView
+            android:id="@+id/body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:textColor="#000000"
+            android:textSize="15dp"
+            android:layout_below="@id/subject_matter"
+            android:text="In order to manage mem iuu u uiory resource and for speed optimization in the app, it’s better to stage-load cases when the need arises. This method returns the requested content and respective page numbers. In order to manage mem iuu u uiory resource and for speed optimization in the app, it’s better to stage-load cases when the need arises. This method returns the requested content and respective page numbers.In order to manage mem iuu u uiory resource and for speed optimization in the app, it’s better to stage-load cases when the need arises. This method returns the requested content and respective page numbers. End"/>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

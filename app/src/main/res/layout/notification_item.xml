@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:layout_height="60dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Title of the file"
+            android:textColor="@color/bookMiddle"
+            android:textStyle="bold"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentTop="true"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/download_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/folder2"
+            android:layout_below="@+id/title"/>
+
+        <TextView
+            android:id="@+id/size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/download_img"
+            android:text="25mb"
+            android:layout_below="@+id/title"/>
+
+        <TextView
+            android:id="@+id/ntnDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="25-06-2015"
+            android:layout_margin="5dp"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <Button
+            android:id="@+id/startDownload"
+            android:layout_width="100dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="Download"
+            android:onClick="mDownload"
+            android:textColor="#fff"
+            android:layout_margin="5dp"
+            android:stateListAnimator="@null"
+            android:background="#ffcb9764"/>
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="5dp"
+            android:textSize="16sp"
+            android:text="pending"
+            android:textColor="#ffe61b0e"/>
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_alignParentBottom="true"/>
+</LinearLayout>

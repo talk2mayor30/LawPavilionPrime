@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/shelfBG"
+        android:layout_width="match_parent"
+        android:layout_height="185dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/middle"
+   />
+
+
+    <RelativeLayout
+        android:id="@+id/bookOne"
+        android:layout_width="120dp"
+        android:layout_height="155dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="-7dp"
+        android:background="#fff">
+
+        <ImageView
+            android:id="@+id/top_binder"
+            android:layout_width="8dp"
+            android:layout_height="30dp"
+            android:background="@drawable/top_binder"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"/>
+
+        <RelativeLayout
+            android:id="@+id/book_top"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/top_binder"
+            android:layout_alignParentTop="true"
+            android:background="#000">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/pavillon"/>
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/middleBinder"
+            android:layout_width="8dp"
+            android:layout_height="98dp"
+            android:background="@drawable/middle_binder"
+            android:layout_below="@id/book_top"/>
+
+        <LinearLayout
+            android:id="@+id/bookMiddle"
+            android:layout_width="match_parent"
+            android:layout_height="98dp"
+            android:layout_toRightOf="@+id/middleBinder"
+            android:orientation="vertical"
+            android:padding="4dp"
+            android:layout_below="@+id/book_top"
+            android:background="@color/bookMiddle">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="THE GOVERNOR OF KADUNA STATE\nv\nZENITH BANK PLC THE GOVERNOR OF KADUNA STATE\nv\nZENITH BANK PLC "
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:textColor="#fff"
+            android:gravity="center"
+            android:maxLines="5"
+            android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/suitNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="4dp"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#ff990001"
+                android:text="SC.10859/1985"
+                android:maxLines="1"
+                android:ellipsize="end"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/bottom_binder"
+            android:layout_width="8dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bookMiddle"
+            android:background="@drawable/end_binder"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/bookMiddle"
+            android:gravity="bottom|center_horizontal"
+            android:textSize="11sp"
+            android:textStyle="italic"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:lineSpacingExtra="-4dp"
+            android:textColor="#000"
+            android:text="A product of law pavillon"
+            android:layout_toRightOf="@id/bottom_binder"
+            android:background="@color/bookBottom"/>
+    </RelativeLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="git.lawpavilionprime" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.read_external_storage" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+
+    <!-- Start of Permission for GCM -->
+    <permission
+        android:name="git.lawpavilionprime.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="git.lawpavilionprime.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <!-- End of Permission for GCM -->
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MyActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ExampleActivity1"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/CurlTheme" >
+        </activity>
+        <activity
+            android:name=".SupremeCourt.SupremeCourt"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:launchMode="singleTop" >
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name=".research.Research"
+            android:label="@string/title_activity_research" >
+        </activity>
+        <activity
+            android:name=".Dashboard.Dashboard"
+            android:label="@string/title_activity_dashboard" >
+        </activity>
+        <activity
+            android:name=".search_book.EbookReader"
+            android:label="@string/title_activity_ebook_reader" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".practiceArea.PracticeArea"
+            android:label="@string/title_activity_practice_area" >
+        </activity>
+        <activity
+            android:name=".contentUpdate.ContentUpdate"
+            android:label="SyncDate" >
+        </activity>
+        <activity
+            android:name=".SetUp._Module"
+            android:label="@string/title_activity_notification" >
+        </activity>
+        <activity
+            android:name=".UniqueID"
+            android:label="@string/title_activity_unique_id" >
+        </activity>
+        <activity
+            android:name=".bookflip.SearchBook"
+            android:label="@string/title_activity_search_book" >
+        </activity>
+        <activity
+            android:name=".auth._Login"
+            android:label="@string/title_activity___login"
+            android:screenOrientation="portrait" >
+
+        </activity>
+        <activity
+            android:name=".auth._SignUp"
+            android:label="@string/title_activity___sign_up"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".auth._ForgotPassword"
+            android:label="@string/title_activity___forgot_password"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name=".GooglePlay"
+            android:label="@string/title_activity_google_play" >
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".conferencePapers"
+            android:label="@string/title_activity_conference_papers" >
+        </activity>
+        <activity
+            android:name=".bookstore.BookStore"
+            android:label="@string/title_activity_book_store" >
+        </activity>
+
+        <!-- Start of GCM Declarations -->
+        <service
+            android:name=".GCMIntentService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <receiver
+            android:name="com.google.android.gms.gcm.GcmReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="git.lawpavilionprime" />
+            </intent-filter>
+        </receiver>
+        <!-- End of GCM Declarations -->
+        <activity
+            android:name="._360degree._360DegreeMain"
+            android:label="@string/title_activity__360_degree_main">
+        </activity>
+    </application>
+
+</manifest>
